@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>手贷通</title>
+  <link rel ="Shortcut Icon" href="static/favicon.ico">
+
+  <link rel="stylesheet" type="text/css" href="static/css/reset.css"/>
+  <!--mui的字体文件-->
+  <link rel="stylesheet" href="static/css/mui.min.css">
+  <link rel="stylesheet" type="text/css" href="static/css/mui.picker.min.css"/>
+  <script src="static/js/mui.min.js"></script>
+
+
+  <script src="static/js/mui.picker.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="static/js/jquery-1.4.4.min.js" type="text/javascript" charset="utf-8"></script>
+
+  <script type="text/javascript">
+
+		//计算rem
+    var scale = 1 / devicePixelRatio;
+    if(document.documentElement.clientWidth<375){
+      scale = 0.333
+    }
+    document.querySelector('meta[name="viewport"]').setAttribute('content','width=device-width,initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no');
+    document.documentElement.style.fontSize = document.documentElement.clientWidth / 10 + 'px';
+
+  </script>
+</head>
+<body>
+<div id="app" style="height: 100%;">
+  <keep-alive >
+    <!-- 这里是会被缓存的视图组件 true-->
+    <router-view v-if="$route.meta.keepAlive"></router-view>
+  </keep-alive>
+
+  <!-- 这里是不会被缓存的视图组件 false-->
+
+  <router-view v-if="!$route.meta.keepAlive"></router-view>
+</div>
+<!-- built files will be auto injected -->
+</body>
+</html>

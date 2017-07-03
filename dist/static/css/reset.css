@@ -1,0 +1,190 @@
+.clearFix:after{
+	display: block;
+	content:"";
+	clear: both;
+	zoom: 1;
+}
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    font-family: Apple LiGothic Medium,Apple LiSung Light,Arial,"Microsoft YaHei",sans-serif;
+}
+h1, h2, h3, h4, h5, h6{font-weight: 500}
+body,html {
+    line-height:1;
+    height: 100%;
+    background-color:#f3f3f3 ;
+}
+
+:focus {
+	outline: 1;
+}
+
+article,aside,canvas,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,summary {
+    display:block;
+}
+nav,ul,li{
+    list-style:none;
+}
+
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    border:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted #000;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/*背景颜色*/
+.bgcf3{background-color: #f3f3f3}
+/*高度*/
+.h10{height: 0.1333rem}
+.h12{height: 0.1666rem}
+
+/*浮动*/
+.fl{float: left}
+.fr{float: right}
+
+/*字体左右*/
+.textL{text-align: left}
+.textr{text-align: right}
+
+/*边距*/
+.pgTop{padding-top: 1.133333333333333rem;}
+.pgBot{padding-bottom: 1.133333333333333rem;}
+.pgBotLg{padding-bottom: 1.633333333333333rem;}
+
+/*定位*/
+.pr{position: relative}
+.pa{position: absolute}
+
+/*提示toast*/
+.mui-toast-container{bottom :9%}
+.mui-toast-container .mui-toast-message{  font-size:0.32rem;  padding: 0.3rem;  height: auto;line-height: 0.4rem;text-align: left  }
+
+/*滚动条加载*/
+.jroll-scroll {
+  position: absolute;
+  top: 1.233333333333333rem;
+  bottom: 0rem;
+  width: 100%;
+}
+.scroll-wrapper{
+  position: absolute;
+  top: 3.78rem;
+  bottom: 0rem;
+  width: 100%;
+  background-color: #fff;
+}
+.com-scrollr{
+  position: absolute;
+  top: 2.45rem;
+  bottom: 1.5rem;
+  width: 100%;
+}
+.jroll-infinite-tip {
+  font-size: 0.5rem;
+  text-align: center;
+  line-height: 1rem;
+  color: #666;
+}
+.jroll-infinite-tip img {
+  width: 0.48rem;
+  vertical-align: middle;
+  margin-right: 0.13rem;
+}
+.jroll-plugin-pulldown-text {
+  font-size: 0.5rem;
+}
+.mui-scroll-wrapper,.mui-scroll{background-color: #fff}
+
+/*弹出框*/
+.mui-popup-title{color:#fb5a5a;}
+
+/*数据请求遮罩层*/
+.loading{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	width: 9rem;
+}
+.pickerTitle{
+	position: absolute;
+	top:0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: 0.1rem auto;
+}
